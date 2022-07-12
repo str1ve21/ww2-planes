@@ -1,0 +1,289 @@
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+p {
+	text-align: justify;
+}
+
+h1, p, span {
+	font-family: 'Russo One', serif;
+}
+
+.header {
+	position: relative;
+	height: 15vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	z-index: 4;
+}
+
+.header h1 {
+	display: none;
+	margin-bottom: 0;
+	font-size: 5vw;
+}
+
+
+.parallax-div {
+	position: relative;
+	z-index: 5;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 85vh;
+	width: calc(100% - 100px);
+	margin-left: 50px;
+	margin-right: 50px;
+	background: url('img/parallax.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.parallax-div span {
+	position: absolute;
+	z-index: 10;
+	bottom: 10px;
+	font-size: 1.25vw;
+	color: #e6e6e6;
+}
+
+
+
+.main-cont {
+	position: relative;
+	z-index: 10;
+	width: 85%;
+	margin-left: 7.5%;
+	margin-right: 7.5%;
+	margin-bottom: 90px;
+	margin-top: 90px;
+	background: url("img/bg-prop.png") no-repeat center right;
+	background-size: contain;
+}
+
+.main-cont h1 {
+	font-size: 4vw;
+	color: #121212;
+}
+
+.main-cont p {
+	font-size: 2vw;
+	color: #303030;
+}
+
+
+.plane-div1, .plane-div2, .plane-div3, .plane-div4, .plane-div5 {
+	position: relative;
+	z-index: 5;
+	height: 85vh;
+	width: calc(100% - 100px);
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	background-size: cover;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+
+.plane-div1 h1, .plane-div2 h1, .plane-div3 h1, .plane-div4 h1, .plane-div5 h1 {
+	position: relative;
+	display: inline-block;
+	margin-left: 50px;
+	margin-top: 150px;
+	font-size: 6vw;
+	color: #e6e6e6;
+	transform: translateZ(100px);
+}
+
+.plane-div1 p, .plane-div2 p, .plane-div3 p, .plane-div4 p, .plane-div5 p {
+	position: relative;
+	width: 75%;
+	font-size: 1.5vw;
+	margin-left: 50px;
+	color: #e6e6e6;
+	transform: translateZ(75px);
+}
+
+.plane-div1 {
+	background: url('img/p51.jpg') no-repeat center center;
+}
+
+.plane-div2 {
+	background: url('img/la7.jpg') no-repeat center center;
+}
+
+.plane-div3 {
+	background: url('img/p47.jpg') no-repeat center center;
+}
+
+.plane-div4 {
+	background: url('img/i16.jpg') no-repeat center center;
+}
+
+.plane-div5 {
+	background: url('img/p39.jpg') no-repeat center center;
+}
+
+
+
+
+.menu-pos {
+	position: fixed;
+	z-index: 1000;
+	height: 100%;
+	width: 50px;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-items {
+	height: max-content;
+	width: 50px;
+}
+
+.lsvg {
+	margin-right: 17.5px;
+	margin-left: 17.5px;
+	fill: rgb(200, 200, 200);
+	transition: 0.75s;
+}
+
+#lsvg-1 {
+	fill: rgb(12, 12, 12);
+}
+
+
+footer {
+	height: 5vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer h1 {
+	font-size: 1.5vw;
+}
+
+
+@media (max-width: 768px) {
+
+	.header {
+		height: 10vh;
+	}
+
+	.header h1 {
+		font-size: 9vw;
+	}
+
+	.parallax-div {
+		height: 50vh;
+		width: calc(100% - 50px);
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	.parallax-div span {
+		font-size: 3vw;
+	}
+
+	.main-cont {
+		width: calc(100% - 50px);
+		margin: 25px !important;
+	}
+
+	.main-cont h1 {
+		font-size: 6vw;
+	}
+
+	.main-cont p {
+		font-size: 3vw;
+	}
+
+	.plane-div1, .plane-div2, .plane-div3, .plane-div4, .plane-div5 {
+		background-size: auto 50vh;
+		height: 50vh;
+		width: calc(100% - 50px);
+		margin: 0px 25px 25px 25px;
+	}
+
+	.plane-div1-h1, .plane-div2-h1, .plane-div3-h1, .plane-div4-h1, .plane-div5-h1 {
+		margin-top: 90px;
+		font-size: 7vw;
+	}
+
+	.plane-div1 p, .plane-div2 p, .plane-div3 p, .plane-div4 p, .plane-div5 p {
+		font-size: 2.5vw;
+	}
+
+	.menu-pos {
+		display: none;
+	}
+
+	footer h1 {
+		font-size: 3vw;
+	}
+
+}
+
+@media (min-width: 1920px) {
+
+	.plane-div1, .plane-div2, .plane-div3, .plane-div4, .plane-div5 {
+		background-size: cover;
+	}
+
+}
+
+@media (min-width: 2560px) {
+
+	.menu-pos {
+		display: none;
+	}
+	
+}
+
+	/* scroll */
+
+
+::-webkit-scrollbar {
+	width:12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #606060;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #707070;
+}
+
+::-webkit-scrollbar-track {
+    border-left: solid 2px #404040;
+    background-color: #242424;
+}
